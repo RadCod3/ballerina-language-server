@@ -57,6 +57,31 @@ public class ImportMuleTest extends AbstractLSTest {
             TestConfig updatedConfig = new TestConfig(testConfig.description(), testConfig.projectPath(), 
                     testConfig.parameters(), response);
 //            updateConfig(configJsonPath, updatedConfig);
+            
+            // Print detailed comparison for debugging
+            System.out.println("=== TEST FAILURE DETAILS ===");
+            System.out.println("Test: " + testConfig.description() + " (" + configJsonPath + ")");
+            System.out.println();
+            System.out.println("=== EXPECTED RESPONSE ===");
+            System.out.println(gson.toJson(expectedToolResponse));
+            System.out.println();
+            System.out.println("=== ACTUAL RESPONSE ===");
+            System.out.println(gson.toJson(actualToolResponse));
+            System.out.println();
+            System.out.println("=== RAW ACTUAL RESPONSE ===");
+            System.out.println(response.toString());
+            System.out.println();
+            
+            // Compare individual fields
+            System.out.println("=== FIELD COMPARISON ===");
+            System.out.println("Error - Expected: " + expectedToolResponse.error() + ", Actual: " + actualToolResponse.error());
+            System.out.println("TextEdits - Expected: " + (expectedToolResponse.textEdits() != null ? expectedToolResponse.textEdits().size() + " entries" : "null") + 
+                               ", Actual: " + (actualToolResponse.textEdits() != null ? actualToolResponse.textEdits().size() + " entries" : "null"));
+            System.out.println("Report - Expected: " + (expectedToolResponse.report() != null ? expectedToolResponse.report().length() + " chars" : "null") + 
+                               ", Actual: " + (actualToolResponse.report() != null ? actualToolResponse.report().length() + " chars" : "null"));
+            System.out.println("JsonReport - Expected: " + expectedToolResponse.jsonReport() + ", Actual: " + actualToolResponse.jsonReport());
+            System.out.println("=== END TEST FAILURE DETAILS ===");
+            
             Assert.fail(String.format("Failed test: '%s' (%s)", testConfig.description(), configJsonPath));
         }
     }
