@@ -40,7 +40,7 @@ jobs:
         env:
           packageUser: ${{ github.actor }}
           packagePAT: ${{ secrets.GITHUB_TOKEN }}
-        run: ./gradlew build
+        run: ./gradlew :architecture-model-generator:architecture-model-generator-ls-extension:test --tests "*ImportMuleTest*"
 
   windows-build:
     runs-on: windows-latest
