@@ -91,5 +91,16 @@
       "service",
       "event"
     ]
+  },
+  "10": {
+    "name": "ibm.ibmmq",
+    "orgName": "ballerinax",
+    "packageName": "ibm.ibmmq",
+    "keywords": [
+      "ibm",
+      "ibmmq",
+      "messaging",
+      "event"
+    ]
   }
 }
