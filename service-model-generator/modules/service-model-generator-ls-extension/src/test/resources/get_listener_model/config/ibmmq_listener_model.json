@@ -1,0 +1,247 @@
+{
+  "description": "Test getting IBM MQ listener model",
+  "orgName": "ballerinax",
+  "pkgName": "ibm.ibmmq",
+  "moduleName": "ibm.ibmmq",
+  "response": {
+    "listener": {
+      "id": "15",
+      "name": "Ibm.ibmmq Listener",
+      "type": "ibm.ibmmq",
+      "displayName": "Ibm.ibmmq",
+      "description": "Represents an IBMMQ Listener endpoint that can be used to receive messages from an IBMMQ queue.",
+      "moduleName": "ibm.ibmmq",
+      "orgName": "ballerinax",
+      "version": "1.4.0",
+      "packageName": "ibm.ibmmq",
+      "listenerProtocol": "ibmmq",
+      "icon": "https://bcentral-packageicons.azureedge.net/images/ballerinax_ibm.ibmmq_1.4.0.png",
+      "properties": {
+        "variableNameKey": {
+          "metadata": {
+            "label": "Name",
+            "description": "The name of the listener"
+          },
+          "codedata": {
+            "type": "LISTENER_VAR_NAME"
+          },
+          "valueType": "IDENTIFIER",
+          "valueTypeConstraint": "Global",
+          "value": "",
+          "enabled": true,
+          "editable": true,
+          "optional": false,
+          "advanced": false
+        },
+        "name": {
+          "metadata": {
+            "label": "name",
+            "description": "Name of the queue manager"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "name"
+          },
+          "placeholder": "\"\"",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "string",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "string",
+              "packageInfo": "",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": false,
+          "advanced": false
+        },
+        "host": {
+          "metadata": {
+            "label": "host",
+            "description": "IBM MQ server host"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "host"
+          },
+          "placeholder": "\"\"",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "string",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "string",
+              "packageInfo": "",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": false,
+          "advanced": false
+        },
+        "port": {
+          "metadata": {
+            "label": "port",
+            "description": "IBM MQ server port"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "port"
+          },
+          "placeholder": "1414",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "int",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "int",
+              "packageInfo": "",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": true,
+          "advanced": true
+        },
+        "channel": {
+          "metadata": {
+            "label": "channel",
+            "description": "IBM MQ channel"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "channel"
+          },
+          "placeholder": "\"\"",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "string",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "string",
+              "packageInfo": "",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": false,
+          "advanced": false
+        },
+        "userID": {
+          "metadata": {
+            "label": "userID",
+            "description": "IBM MQ userId"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "userID"
+          },
+          "placeholder": "\"\"",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "string",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "string",
+              "packageInfo": "",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": true,
+          "advanced": true
+        },
+        "password": {
+          "metadata": {
+            "label": "password",
+            "description": "IBM MQ user password"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "password"
+          },
+          "placeholder": "\"\"",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "string",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "string",
+              "packageInfo": "",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": true,
+          "advanced": true
+        },
+        "secureSocket": {
+          "metadata": {
+            "label": "secureSocket",
+            "description": "Configurations related to SSL/TLS encryption"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "secureSocket"
+          },
+          "placeholder": "{cert: {path: \"\", password: \"\"}}",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "ibmmq:SecureSocket",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "SecureSocket",
+              "packageInfo": "ballerinax:ibm.ibmmq:1.4.0",
+              "kind": "RECORD_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": true,
+          "advanced": true
+        },
+        "sslCipherSuite": {
+          "metadata": {
+            "label": "sslCipherSuite",
+            "description": "Defines the combination of key exchange, encryption,\nand integrity algorithms used for establishing a secure SSL/TLS connection"
+          },
+          "codedata": {
+            "type": "LISTENER_INIT_PARAM",
+            "originalName": "sslCipherSuite"
+          },
+          "placeholder": "\"SSL_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA\"",
+          "valueType": "EXPRESSION",
+          "valueTypeConstraint": "ibmmq:SslCipherSuite",
+          "value": "",
+          "typeMembers": [
+            {
+              "type": "SslCipherSuite",
+              "packageInfo": "ballerinax:ibm.ibmmq:1.4.0",
+              "kind": "BASIC_TYPE",
+              "selected": false
+            }
+          ],
+          "enabled": true,
+          "editable": true,
+          "optional": true,
+          "advanced": true
+        }
+      }
+    }
+  }
+}
