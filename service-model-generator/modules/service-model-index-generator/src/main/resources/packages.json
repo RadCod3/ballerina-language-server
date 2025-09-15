@@ -889,6 +889,14 @@
             }
           ]
         }
+      },
+      "annotations": {
+        "ServiceConfig": {
+          "attachmentPoints": ["SERVICE"],
+          "displayName": "Service Configuration",
+          "description": "Define advanced configurations like queue name",
+          "typeConstrain": "ibmmq:ServiceConfiguration"
+        }
       }
     }
   ]
