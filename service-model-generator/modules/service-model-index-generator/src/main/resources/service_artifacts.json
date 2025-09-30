@@ -1358,7 +1358,7 @@
         },
         "channel": {
           "label": "Channel",
-          "description": "The.",
+          "description": "The channel name to connect to the IBM MQ server.",
           "defaultValue": "",
           "placeholder": "",
           "valueType": "EXPRESSION",
