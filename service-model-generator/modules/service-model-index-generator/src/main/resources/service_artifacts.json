@@ -1418,7 +1418,7 @@
           "attachmentPoints": ["SERVICE"],
           "displayName": "Service Configuration",
           "description": "Define advanced configurations like queue name",
-          "typeConstrain": "ibmmq:ServiceConfiguration"
+          "typeConstraint": "ibmmq:ServiceConfiguration"
         }
       },
       "initForm": {
@@ -1428,9 +1428,9 @@
           "defaultValue": "",
           "placeholder": "",
           "valueType": "EXPRESSION",
-          "typeConstrain": "string",
+          "typeConstraint": "string",
           "typeMembers": [],
-          "sourceKind": "LISTENER_PARAM_INCLUDED_FILED",
+          "sourceKind": "LISTENER_PARAM_INCLUDED_FIELD",
           "selections": []
         },
         "host": {
@@ -1439,9 +1439,9 @@
           "defaultValue": "",
           "placeholder": "",
           "valueType": "EXPRESSION",
-          "typeConstrain": "string",
+          "typeConstraint": "string",
           "typeMembers": [],
-          "sourceKind": "LISTENER_PARAM_INCLUDED_FILED",
+          "sourceKind": "LISTENER_PARAM_INCLUDED_FIELD",
           "selections": []
         },
         "port": {
@@ -1450,9 +1450,9 @@
           "defaultValue": "1414",
           "placeholder": "1414",
           "valueType": "EXPRESSION",
-          "typeConstrain": "int",
+          "typeConstraint": "int",
           "typeMembers": [],
-          "sourceKind": "LISTENER_PARAM_INCLUDED_FILED",
+          "sourceKind": "LISTENER_PARAM_INCLUDED_FIELD",
           "selections": []
         },
         "channel": {
@@ -1461,9 +1461,9 @@
           "defaultValue": "",
           "placeholder": "",
           "valueType": "EXPRESSION",
-          "typeConstrain": "string",
+          "typeConstraint": "string",
           "typeMembers": [],
-          "sourceKind": "LISTENER_PARAM_INCLUDED_FILED",
+          "sourceKind": "LISTENER_PARAM_INCLUDED_FIELD",
           "selections": []
         }
       }
