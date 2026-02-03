@@ -1,0 +1,7 @@
+{
+  "description": "Custom agent search with Type/Agent keyword from Central",
+  "kind": "CUSTOM_AGENT",
+  "source": "empty.bal",
+  "queryMap": {},
+  "categories": []
+}
