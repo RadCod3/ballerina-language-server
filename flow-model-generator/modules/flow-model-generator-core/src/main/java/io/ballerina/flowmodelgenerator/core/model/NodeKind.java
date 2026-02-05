@@ -79,6 +79,7 @@ public enum NodeKind {
     AGENT,
     AGENT_CALL,
     CUSTOM_AGENT,
+    LOCAL_AGENT,
     CLASS_INIT,
 
     MODEL_PROVIDER,
